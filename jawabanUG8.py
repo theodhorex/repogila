@@ -62,3 +62,6 @@ if __name__ == "__main__":
     main()
 
 
+# KALAU COPAS JANGAN LUPA PARAFRASE GAESSS :)
+
+
