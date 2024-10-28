@@ -22,9 +22,29 @@ class Queue:
         return len(self.data)
 
 def serobot_antrian(q : Queue, data):
-    pass
+    temp_list = []
+    while not q.is_empty():
+        temp_list.append(q.dequeue())
+
+    temp_list.insert(0, data)
+
+    for item in temp_list:
+        q.enqueue(item)
+    
 def get_max(q: Queue):
-    pass
+    max_value = None
+    temp_queue = Queue()
+
+    while not q.is_empty():
+        value = q.dequeue()
+        temp_queue.enqueue(value)
+        if max_value is None or value > max_value:
+            max_value = value
+
+    while not temp_queue.is_empty():
+        q.enqueue(temp_queue.dequeue())
+
+    return max_value
 
 def main():
     q = Queue()
@@ -39,9 +59,10 @@ def main():
     serobot_antrian(q, 30)
     print("Antrian sesudah di serobot: ")
     q.write_all_data()
-    print("Melakukan pencarian data terbeaar: ")
+    print("Melakukan pencarian data terbesar: ")
     print(f"Data terbesar: {get_max(q)} ")
     print("Pembuktian bahwa data tidak berubah: ")
     q.write_all_data()
 if __name__ == "__main__":
     main()
+
