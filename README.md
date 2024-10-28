@@ -2,7 +2,7 @@
 # BRANCH UNTUK NAMPUNG UG Struktur Data 2024
 
 28 Oktober 2024:
-- UG 8 (Materi: Queue)(FILE: UG8.md, jawabanUG8.py)
+- UG 8 (Materi: Queue) - (FILE: UG8.md, jawabanUG8.py)
 
 
 ## Authors
