@@ -1,0 +1,19 @@
+    Masukkan 3 pasien
+    Nama pasien: Asep
+    Kecepatan Respirasi per menit: 0
+
+
+    Nama pasien: Budi
+    Kecepatan Respirasi per menit: 30
+    Denyut lemah/tidak terasa (y/n): y
+
+
+    Nama pasien: Hanafi
+    Kecepatan Respirasi per menit: 30
+    Denyut lemah/tidak terasa (y/n): n
+    Apakah bisa diperintah? (y/n): y
+
+    === HASIL DATA PASIEN ===
+    1. Asep, status: Sudah meninggal
+    2. Budi, status: Merah
+    3. Hanafi, status: Kuning
